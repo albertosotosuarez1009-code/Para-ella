@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Una carta para ti</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="vignette"></div>
+
+<div class="topline">un pequeño universo · para ti</div>
+
+<button class="core" id="core" aria-label="Toca el centro de la galaxia para descubrir la carta"></button>
+
+<div class="letter-wrap" id="letterWrap">
+  <button class="letter" id="letter" aria-label="Abrir la carta">
+    <div class="seal">✦</div>
+    <div class="eyebrow">algo que quería decirte</div>
+    <h1>Para ti</h1>
+    <p>Hay cosas que merecen su propio momento.</p>
+    <p class="tap">Toca para abrir · ✧</p>
+  </button>
+</div>
+
+<div class="controls" id="controls">
+  <button class="btn" id="accelerate">Acelerar la galaxia</button>
+</div>
+<div class="bottom" id="bottomText">TOCA EL CENTRO DE LA GALAXIA</div>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+  <button class="close" id="close">Cerrar ×</button>
+  <article class="paper" tabindex="-1">
+    <div class="eyebrow">para alguien especial</div>
+    <h2 id="letterTitle">Quería decirte algo…</h2>
+
+    <p>De manera inesperada, has llegado a mi vida y, de una forma tan peculiar, te has ganado todo mi corazón. Me aceleras el pulso cada vez que te veo; tu presencia es lo que más anhelo día con día.</p>
+
+    <p>Tú eres más que una simple amiga: eres la mujer que me cautivó y me atrajo hacia ti. Eres esa parte esencial que hace que mi corazón se acelere, esa parte que hace que deje de pensar y me dedique únicamente a crear versos y escenarios que quizá algún día lleguen a hacerse realidad.</p>
+
+    <p>Eres tan magnífica que ni siquiera las canciones más románticas logran expresar por completo cada uno de los sentimientos que estallan en mi corazón. Me encantas tanto que, cada vez que intento expresar lo que siento con palabras, me acelero y no puedo dejar de sonreír, porque esto es lo más magnífico que me ha pasado en la vida.</p>
+
+    <p>Y, más que una simple poesía o un texto lírico, quiero que seas parte de mis melodías, de las canciones que escribo. Quiero que seas la mujer que inspire cada uno de mis relatos; quiero que estés presente en cada rincón de mi mente y que cada verso que escriba te pertenezca únicamente a ti.</p>
+
+    <p>Cada pequeño detalle que me inspires a crear, cada palabra que nazca de mis sentimientos y cada melodía que surja de mi corazón, quiero que lleven tu esencia y que, de alguna manera, te pertenezcan solo a ti.</p>
+
+    <p class="signature">Con cariño, para ti. <span style="color:#e0587f">♥</span></p>
+    <div class="hint">Puedes cerrar esta carta y volver a la galaxia</div>
+  </article>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
